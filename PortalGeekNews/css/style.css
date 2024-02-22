@@ -1,11 +1,22 @@
-body {
-    background-color: #e7ffff;
+*{
+    padding: 0px;
+    margin: 0px;
 }
 
-nav {
-    height: 150px;
+body {
     background-color: #e7ffff;
-    padding-top: 50px;
+    
+}
+
+/*NavBar*/
+
+nav {
+    height: 100px;
+    background-color: #e7ffff;
+   /* position: fixed;*/
+    margin-top: 50px;
+    width: 1900px;
+
 }
 
 nav>ul {
@@ -46,11 +57,69 @@ nav>ul>li>a>h5 {
     margin-right: 50px;
 }
 
+
+
+
+/*banner*/
+
 .banner {
-    margin-top: 100px;
-    width: auto;
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
     text-align: center;
+    padding-top: 50px;
 }
+
+#carouselExampleCaptions{
+    padding-top: 50px;
+}
+
+/*noticiasEmDestaque*/
+
+.noticiasEmDestaque{
+    margin-top: 100px;
+    margin-left: 100px;
+    display: flex;
+}
+
+/*coluna1*/
+
+.coluna1>a{
+    text-decoration: none;
+ 
+}
+
+.coluna1>a>h2{
+    margin-left: 90px;
+    color: black;
+}
+
+/*coluna 2*/
+.coluna2{
+    margin-left: 400px;
+}
+.coluna2>a{
+text-decoration: none;
+}
+.coluna2>a>h2{
+   margin-left: 90px;
+   color: black;
+    }
+
+/*coluna 3*/
+
+.coluna3{
+    margin-left: 400px;
+}
+.coluna3>a{
+text-decoration: none;
+}
+.coluna3>a>h2{
+   margin-left: 90px;
+   color: black;
+    }
+
+/*footer*/
 
 
 footer {
@@ -59,12 +128,12 @@ footer {
     width: auto;
     display: flex;
     border-radius: 28px;
+    margin-top: 123px;
 }
 
 footer>a {
     color: #e7ffff;
     padding-top: 100px;
-    text-decoration: none;
 
 }
 
@@ -74,7 +143,7 @@ footer>a>i {
 
 }
 
-footer>ul{
+.conteudo>ul{
     list-style-type: none;
 
 }
@@ -89,8 +158,18 @@ footer>ul{
     list-style-type: none;
     margin-left: 258px;
     margin-top: 50px;
+    text-align: center;
+
+
 }
 
 .conteudo>li>a{
     color: black;
+    text-decoration: none;
+
+}
+
+footer>h6{
+    margin-top: 150px ;
+    text-align: center;
 }

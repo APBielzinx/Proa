@@ -1,48 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 </head>
+
 <body>
     <nav>
         <ul>
-            <li style="float:left" class="navLogo"><a href="index.html"><img src="assets/logo.jpeg" alt="" class="logo"><h5>GeekInfo</h5></a></li>
+            <li style="float:left" class="navLogo"><a href="index.html"><img src="assets/logo.jpeg" alt="" class="logo">
+                    <h5>GeekInfo</h5>
+                </a></li>
             <form class="d-flex" role="search" style="float:left; margin-top: 15px; margin-left: 450px; ">
-                <input class="form-control me-2" type="search" placeholder="O que está procurando?" aria-label="Search" style="background-color: #80E0A8; color: #ffff; width: 448px;">
-              </form>
-            <li class="navItem"><a href="animes.html"><h5>Animes</h5></a></li>
-            <li class="navItem"><a href="series.html"><h5>Séries</h5></a></li>
-            <li class="navItem"><a href="filmes.html"><h5>Filmes</h5></a></li>
+                <input class="form-control me-2" type="search" placeholder="O que está procurando?" aria-label="Search"
+                    style="background-color: #80E0A8; color: #ffff; width: 448px; height: 50px; border-color: black;">
+            </form>
+            <li class="navItem"><a href="animes.html">
+                    <h5>Animes</h5>
+                </a></li>
+            <li class="navItem"><a href="games.html">
+                    <h5>Games</h5>
+                </a></li>
+            <li class="navItem"><a href="filmes.html">
+                    <h5>Filmes</h5>
+                </a></li>
         </ul>
     </nav>
 
     <div class="banner">
-        <h1>Notícia Principal ou destaque do momento</h1>
-        <img src="..." class="img-fluid" alt="...">
+        <h1>Attack on Titan</h1>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="destaque.html"><img src="assets/destaquePaginaPrincipal.jpg" class="d-block w-100"
+                            alt="..." style="height: 800px; width: 800px;">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Attack on Titan ganhará sequência?</h5>
+                        <p>Tudo sobre o futuro do anime</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div class="noticiasEmDestaque">
+        <div class="coluna1">
+            <a href="">
+                <h2>Anime</h2>
+            </a>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/destaquePaginaPrincipal.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/destaquePaginaPrincipal.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/destaquePaginaPrincipal.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="coluna2">
+            <a href="">
+                <h2>Games</h2>
+            </a>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/destaquePaginaPrincipal.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/destaquePaginaPrincipal.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/destaquePaginaPrincipal.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+            <div class="coluna3">
+                <a href="">
+                    <h2>Filmes</h2>
+                </a>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/destaquePaginaPrincipal.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/destaquePaginaPrincipal.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/destaquePaginaPrincipal.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                    </div>
+                </div>
+        </div>
+        
+    </div>
+
 
     <footer>
         <div class="logoFooter">
             <a href="index.html"><img src="assets/logo.jpeg" alt="" class="logo"></a>
         </div>
+
         <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
         <a href="#"><i class="fa-brands fa-facebook  fa-2xl"></i></a>
         <a href="#"><i class="fa-brands fa-youtube  fa-2xl"></i></a>
 
         <ul class="conteudo">
-            <li><h5>Conteudo</h5></li>
-            <li><a href="animes.html"><h5>Animes</h5></a></li>
-            <li><a href="series.html"><h5>Séries</h5></a></li>
-            <li><a href="filmes.html"><h5>Filmes</h5></a></li>
+            <li>
+                <h4>Conteudo</h4>
+            </li>
+            <li><a href="animes.html">
+                    <h5>Animes</h5>
+                </a></li>
+            <li><a href="games.html">
+                    <h5>Games</h5>
+                </a></li>
+            <li><a href="filmes.html">
+                    <h5>Filmes</h5>
+                </a></li>
         </ul>
-        </footer>
+
+        <form class="d-flex" role="search" style="float:left; margin-top: 50px; margin-left: 450px; ">
+            <input class="form-control me-2" type="search" placeholder="O que está procurando?" aria-label="Search"
+                style="background-color: #80E0A8; color: #ffff; width: 448px; height: 50px;  border-color: black">
+        </form>
+
+        <h6>
+            Direitos Reservados a Geek Info 2020-2024 &copy;
+        </h6>
+    </footer>
 
     <script src="https://kit.fontawesome.com/8fe955c165.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
