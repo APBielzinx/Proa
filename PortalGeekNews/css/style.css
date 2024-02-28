@@ -253,7 +253,11 @@ a {
 .video{
     margin-right: 100px;
     margin-top: 50px;
-    margin-left: 585px;
+    margin-left: 392px;
+    width: 985px;
+    display: inline-grid;
+    justify-content: center;
+
 }
 
 .video>h3{
