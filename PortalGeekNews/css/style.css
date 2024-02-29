@@ -16,6 +16,8 @@ nav {
     width: 100%;
     top: 0;
     z-index: 1000;
+    display: inline-flex;
+    flex-wrap: wrap;
 }
 
 .nav-transparente {
@@ -26,6 +28,7 @@ nav {
 
 nav:hover {
     background-color: rgba(231, 255, 255, 0.8);
+    transition: 0.3ms all;
 }
 
 
@@ -51,7 +54,7 @@ nav>ul>li>a:hover {
 
 nav>ul>li>a>h5 {
     margin-left: 100px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .logo {
@@ -60,6 +63,7 @@ nav>ul>li>a>h5 {
     width: 75px;
     float: left;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
 .navItem {
@@ -78,6 +82,7 @@ footer {
     display: flex;
     border-radius: 28px;
     margin-top: 123px;
+    flex-wrap: wrap;
 }
 
 footer>a {
@@ -114,8 +119,10 @@ footer>a>i {
 
 
 footer>h6 {
-    margin-top: 150px;
-    text-align: center;
+    margin-top: -21px;    
+    text-align: end;
+    width: 1468px;
+    height: auto;
 }
 
 a {
@@ -144,6 +151,7 @@ a {
     margin-top: 100px;
     margin-left: 100px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 /*coluna1*/
@@ -160,13 +168,24 @@ a {
 .coluna>a>h2 {
     margin-left: 90px;
     color: black;
+    transition: 0.3ms all;
+}
+
+.coluna>a>h2:hover{
+    color: #80E0A8;
 }
 
 .card>a>figure>img {
     height: 180px;
 }
 
+.card{
+  transition: 0.3 all;
+}
 
+.card:hover{
+    background-color:  #80E0A8;
+}
 
 /*pagina home fim*/
 
