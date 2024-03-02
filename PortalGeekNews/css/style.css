@@ -244,6 +244,7 @@ a {
 .texto {
     margin-left: 392px;
     width: 985px;
+    margin-top: 50px;
 }
 
 .texto>p {
