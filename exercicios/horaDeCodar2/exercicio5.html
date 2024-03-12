@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    var numero1 = parseFloat(prompt("Insira um numero"))
+    var numero2 = parseFloat(prompt("Insira outro numero"))  
+    var numero3 = parseFloat(prompt("Insira mais um numero"))  
+    var numero4 = parseFloat(prompt("Insira um numero"))
+    var numero5 = parseFloat(prompt("Insira outro numero"))  
+    var numero6 = parseFloat(prompt("Insira mais um numero"))  
+
+    var media = (numero1+numero2+numero3+numero4+numero5+numero6)/6
+    var maiorValor = Math.max(numero1,numero2,numero3,numero4,numero5,numero6)
+    var valores = [numero1,numero2,numero3,numero4,numero5,numero6]
+
+    document.write("numeros informados são: <br>")
+    for (let index = 0; index < valores.length; index++) {
+        document.write(valores[index]+"<br>")
+        
+    }
+
+    document.write("o maior numero é: "+maiorValor)
+
+
+</script>
+
+<body>
+    
+</body>
+</html>

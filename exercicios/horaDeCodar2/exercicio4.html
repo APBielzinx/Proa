@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    var numero1 = parseFloat(prompt("Insira um numero"))
+    var numero2 = parseFloat(prompt("Insira outro numero"))  
+    var numero3 = parseFloat(prompt("Insira mais um numero"))  
+
+    var maiorValor = Math.max(numero1,numero2,numero3) //pega o maior valor dos 3
+    var valoresRestantes = [numero1, numero2, numero3] //coloca dentro de um array para melhor manipulação
+    valoresRestantes.slice(valoresRestantes.indexOf(maiorValor),1) //retira o maior valor de dentro do array
+    var segundoMaior = Math.max.apply(null,valoresRestantes) // pega o segundo maior valor
+
+    var soma = maiorValor + segundoMaior
+
+    alert("a soma dos maiores valores é "+soma)
+    document.write("a soma dos maiores valores é: "+soma)
+</script>
+
+<body>
+    
+</body>
+</html>
