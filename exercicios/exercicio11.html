@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+        var numero1 = parseFloat(prompt("Insira um numero"))
+        var numero2 = parseFloat(prompt("Insira outro numero"))  
+        var operacao = parseInt(prompt("1. Adição, 2. Subtração, 3. Divisão, 4. Multiplicação"))
+
+        var conta = 0
+        if(operacao == 1){
+            conta = numero1 + numero2
+        }else if(operacao == 2){
+            conta = numero1 - numero2
+        }else if(operacao == 3){
+            conta = numero1/numero2
+        }else{
+            conta = numero1 * numero2
+        }
+
+        alert(" o resultado da operação é: "+conta)
+</script>
+
+<body>
+
+</body>
+
+</html>

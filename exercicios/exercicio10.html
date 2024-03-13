@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    var sexo = parseInt(prompt("Insira o seu sexo 1: feminino 2: masculino"))
+    var altura = parseFloat(prompt("Insira sua altura"))
+
+    var total = 0
+    switch (sexo) {
+        case 2:
+
+            total = (72.7 * altura) - 58
+            alert("o total da operação é " + total.toFixed(2))
+
+            break;
+        case 1:
+
+            total = (62.1 * altura) - 44.7
+            alert("o total da operação é " +  total.toFixed(2))
+
+            break;
+        default:
+            break;
+    }
+
+</script>
+
+<body>
+
+</body>
+
+</html>

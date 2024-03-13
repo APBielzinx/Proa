@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    var anoNasc = parseInt(prompt("Insira o ano que você nasceu"))
+    const dataAtual = new Date();
+    const anoAtual = dataAtual.getFullYear();
+    var idade = anoAtual - anoNasc
+    console.log(idade)
+    if (idade >= 18) {
+        alert("você já pode votar")
+    } else {
+        alert("você ainda não pode votar")
+
+    }
+
+</script>
+
+<body>
+
+</body>
+
+</html>
