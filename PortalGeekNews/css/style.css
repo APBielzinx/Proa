@@ -21,15 +21,11 @@ nav {
 }
 
 .nav-transparente {
-    background-color: rgba(231, 255, 255, 0.8);
+    background-color: rgba(160, 111, 83, 0.8);
     transition: background-color 0.3s ease;
 }
 
 
-nav:hover {
-    background-color: rgba(231, 255, 255, 0.8);
-    transition: 0.3ms all;
-}
 
 
 nav:hover a {
