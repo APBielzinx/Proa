@@ -8,13 +8,21 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public interface Caixa {
-
-    Usuario usuario = new Usuario("Gabriel", 100.00);
     Scanner entrada = new Scanner(System.in);
 
+    Usuario usuario = new Usuario("", 100.00);
+
     static void inicio() {
-        try {
+        if (usuario.getNome().isEmpty()) {
+            System.out.println("Informe o seu nome");
+            String nome = entrada.next();
+            usuario.setNome(nome);
             System.out.println("Olá " + usuario.getNome() + "\n");
+        }
+
+
+        try {
+
 
             System.out.println("escolha uma da opções abaixo " + "\n");
 
@@ -86,7 +94,7 @@ public interface Caixa {
             double transferir = entrada.nextDouble();
             System.out.println(" para qual conta deseja transferir ? ");
 
-            if (transferir >= saldo) {
+            if (transferir >= saldo || transferir <= 0) {
                 System.out.println("Operação não autorizada");
                 transferencia(usuario.getSaldo());
                 outraOperacao();
@@ -152,7 +160,7 @@ public interface Caixa {
             System.out.println(" quanto deseja sacar hoje? ");
             double saque = entrada.nextDouble();
 
-            if (saque >= saldo) {
+            if (saque >= saldo || saque <= 0) {
                 System.out.println("Operação não autorizada");
                 outraOperacao();
             } else {
