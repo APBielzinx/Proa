@@ -26,6 +26,7 @@ public interface Menu{
                 4. cadastrar evento
                 5. Passeio
                 6. Serviços
+                7. sair
                 """);
             int opcao = scanner.nextInt();
 
@@ -43,6 +44,8 @@ public interface Menu{
                 case 5: carro.abastecer(nome);
                     break;
                 case 6: servicos.consultarServico(nome);
+                    break;
+                case 7: System.exit(400);
                     break;
 
 
