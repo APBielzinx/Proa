@@ -1,0 +1,42 @@
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: #d4fdf6;
+    height: 9vh;
+    align-items: center;
+}
+
+.formas{
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #eeffff;
+    flex-wrap: wrap;
+}
+
+.formas a {
+    text-decoration: none;
+    color: black;
+}
+.card{
+    background-color: #d4fdf6;
+    border-radius: 37px;
+    width: 18rem;
+    transition: 0.5s;
+}
+
+.card i {
+    display: flex;
+    justify-content: center;
+    font-size: 25vh;
+    margin-top: 1vh
+}
+
+.card:hover{
+    cursor: pointer;
+    width: 20rem;
+    box-shadow: 0px 0px 1px 1px black ;
+    background-color: #b9faed;
+}

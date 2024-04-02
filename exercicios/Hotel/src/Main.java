@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main implements Menu {
     public static void main(String[] args) {
 
-        System.out.println("Bem vindo ao {Hotel}");
+        System.out.println("Bem vindo ao Resort Hotel");
         Scanner scanner = new Scanner(System.in);
         String nome = null;
         try {
