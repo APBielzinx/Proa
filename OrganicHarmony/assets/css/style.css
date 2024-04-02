@@ -8,7 +8,7 @@
 a{
     text-decoration: none ;
 }
-nav>a>li:hover {
+.navbar>a>li:hover {
     color: black;
     transition: color 0.3s ease;
 }
@@ -18,12 +18,12 @@ nav>a>li:hover {
     transition: background-color 0.3s ease;
 }
 
-nav:hover {
+.navbar:hover {
     background-color: rgb(93, 122, 68);
     transition: background-color 0.3s ease;
 }
 
-nav:hover a {
+.navbar:hover a {
     color: black;
     transition: color 0.3s ease;
 }
@@ -35,7 +35,7 @@ body{
 }
 
 
-nav{
+.navbar{
     display: inline-flex;
     background-color: #5F6F52;
     width: 99vw;
@@ -48,24 +48,15 @@ nav{
 
 }
 
-nav>a{
-    text-decoration: none;
-}
 
-nav>a>li{
-    list-style: none;
-    padding: 1vw;
-    color: white;
-}
-
-nav>a>li>img{
+.navbar-brand>img{
     height: 15vh;
     align-items: baseline;
     display: flex;
     margin-top: 2vh;
 }
 
-nav:hover a {
+.navbar:hover a {
     color: black;
 }
 
