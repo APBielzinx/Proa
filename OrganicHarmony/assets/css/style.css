@@ -7,6 +7,7 @@
 
 a{
     text-decoration: none ;
+    color: white;
 }
 .navbar>a>li:hover {
     color: black;
@@ -38,7 +39,7 @@ body{
 .navbar{
     display: inline-flex;
     background-color: #5F6F52;
-    width: 99vw;
+    width: 100%;
     height: 10vh;
     align-items: center;
     justify-content: center;
@@ -48,6 +49,9 @@ body{
 
 }
 
+.nav-link{
+    color: white;
+}
 
 .navbar-brand>img{
     height: 15vh;
@@ -64,7 +68,7 @@ body{
     background-image: url(../img/fundoBanner.jpg);
     background-repeat: no-repeat;
     height: 100vh;
-    width: 99vw;
+    width:100%;
     display: flex;
     background-size: cover;
    
@@ -85,13 +89,10 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
 }
 
-.conteudo img {
-    height: 60vh;
-    width: 31vw;
-}
+
 
 .conteudo button {
     border-radius: 37px;
@@ -229,22 +230,6 @@ body{
     margin-top: 6vh;
 }
 
-
-.direita{
-    background-color: white;
-    border-radius: 50px;
-    width: 40vw;
-    padding: 5vw;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.esquerda{
-    width: 50vw;
-}
-
 .contato>section>.direita>button{
     border-radius: 37px;
     background-color: #C4661F;
@@ -268,7 +253,6 @@ body{
 
 .form-label{
     display: flex;
-    justify-content: center;
 }
 
 .form-control::placeholder{
@@ -342,7 +326,8 @@ footer>section>a>li{
 }
 
 .footerRedesSociais{
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: center;
     align-items: end;
  
 }
@@ -356,12 +341,13 @@ footer>section>a>li{
     
 }
 
-.footerRedesSociais>li>a>i{
+.footerRedesSociais>ul>li>a>i{
     color: #C4661F;
     font-size: xx-large;
+    margin-right: 1vw;
 }
 
-.footerRedesSociais>li>a>i:hover {
+.footerRedesSociais>ul>li>a>i:hover {
     color: black;
 }
 
@@ -445,8 +431,12 @@ nav{
         flex-wrap: wrap;
     }
     .sobre .card{
-        width: 100vw;
+        width: 100%;
         height: 40vh;
+    }
+
+    .card{
+        margin-top: 4vh;
     }
     .direita{   
         width: 100%;
@@ -483,6 +473,10 @@ nav{
 
 /* For screens smaller than 480px */
 @media(max-width: 480px){
+    .sobre .card{
+        width: 80vw;
+        height: 40vh;
+    }
     .esquerda>h3{
         margin-top: 5vh;
     }
