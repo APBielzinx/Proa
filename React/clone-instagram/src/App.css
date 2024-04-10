@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root{
+  display: flex;
+}
+.conteudoLateralEsquerda,
+.conteudoLateralDireita,
+.conteudoCentral{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 30vw;
+}
+
+.conteudoLateralEsquerda{
+background-color: red;
+}
+
+.conteudoCentral{
+  background-color: blue;
+}
+
+.conteudoLateralDireita{
+  background-color: yellow;
+}
