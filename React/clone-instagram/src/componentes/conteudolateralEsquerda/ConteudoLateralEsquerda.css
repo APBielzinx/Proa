@@ -1,0 +1,17 @@
+.conteudoLateralEsquerda {
+    display: flex;
+    width: 15vw;
+    background: rgb(255, 255, 255);
+}
+
+.logo {
+    margin-top: 5vh;
+}
+
+
+.conteudoLateralEsquerda ul {
+    list-style: none;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
