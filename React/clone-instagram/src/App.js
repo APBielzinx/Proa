@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Esquerda from './componentes/conteudolateralEsquerda/ConteudoLateralEsquerda';
+import ConteudoCentral from './componentes/conteudoCentral/ConteudoCentral';
 // JSX 
 
 function App() {
@@ -8,13 +9,8 @@ function App() {
     <>
       <Esquerda />
 
-      <div className='conteudoCentral'>
-        {/* 
-          Stories
-          Feed de posts
-        */}
-      </div>
-      
+      <ConteudoCentral/>
+  
       <div className='conteudoLateralDireita'>
         {/* 
           Login
