@@ -28,4 +28,6 @@ document.getElementById("voltarFormas").addEventListener("click",function(){
 
 
 })
+ 
+
 

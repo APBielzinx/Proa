@@ -58,24 +58,28 @@
           </div>
         </nav>
       </header>
-
       <div class="informacoes">
         <article class="historia">
           <div class="imagem">
-            <i class="bi bi-square"></i>
+            <img src="assets/imagens/poligonoIrregular.png" alt="" />
           </div>
           <h5>
-            O quadrado é um polígono convexo que possui quatro lados. Em outras
-            palavras, é uma figura geométrica plana que possui quatro lados
-            congruentes e quatro ângulos retos. Dessa maneira, é chamado também
-            de quadrilátero.
+            Os polígonos irregulares são uma categoria ampla na geometria,
+            abrangendo uma variedade de formas que não se enquadram nas
+            categorias mais simples, como triângulos equiláteros ou retângulos.
+            Eles são caracterizados por lados de diferentes comprimentos e
+            ângulos internos variáveis.
           </h5>
         </article>
         <article class="calculo">
-          <i class="bi bi-square"></i>
-          <h3>Área do Quadrado</h3>
+          <img src="assets/imagens/poligonoIrregular.png" alt="" />
+          <h3>Área do trapézio irregular</h3>
           <br />
-          <h4>Multiplicamos o comprimento da sua base pela sua altura.</h4>
+          <h4>
+            Calcular a área de um polígono irregular pode ser um pouco mais
+            desafiador do que calcular a área de polígonos regulares, pois os
+            polígonos irregulares não possuem formas padronizadas
+          </h4>
         </article>
       </div>
     </main>
@@ -90,33 +94,45 @@
           <div class="modal-content custom-modal-content">
             <!-- Cabeçalho do Modal -->
             <div class="modal-header">
-              <h4 class="modal-title">Calculo do quadrado</h4>
-              <button type="button" class="close" data-dismiss="modal">
+              <h4 class="modal-title">Calculo de polígonos irregulares</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                id="fecharModal"
+              >
                 &times;
               </button>
             </div>
 
             <!-- Corpo do Modal -->
             <div class="modal-body">
-              <label for="">Digite o valor da base</label>
-              <div class="input-group input-group-sm mb-3">
-                <input
-                  type="number"
-                  class="form-control"
-                  aria-label="Sizing example input"
-                  aria-describedby="inputGroup-sizing-sm"
-                  id="baseQuadrado"
-                />
-              </div>
-              <label for="">Digite o valor da altura</label>
-              <div class="input-group input-group-sm mb-3">
-                <input
-                  type="number"
-                  class="form-control"
-                  aria-label="Sizing example input"
-                  aria-describedby="inputGroup-sizing-sm"
-                  id="alturaQuadrado"
-                />
+              <label for="selecionarPoligono"
+                >Selecione o polígono que deseja calcular a área</label
+              >
+              <select
+                class="form-select"
+                id="selecionarPoligono"
+                aria-label="Default select example"
+              >
+                <option selected disabled>clique aqui para selecionar</option>
+                <option value="1">Triângulo retângulo</option>
+                <option value="2">Losango</option>
+                <option value="3">Paralelogramo</option>
+              </select>
+              <div class="modalEsconder" id="modalEsconder">
+                <label id="labelDado1" for="dado1"
+                  >Digite o valor da base maior</label
+                >
+                <div class="input-group input-group-sm mb-3">
+                  <input type="number" class="form-control" id="dado1" />
+                </div>
+                <label id="labelDado2" for="dado2"
+                  >Digite o valor da base menor</label
+                >
+                <div class="input-group input-group-sm mb-3">
+                  <input type="number" class="form-control" id="dado2" />
+                </div>
               </div>
             </div>
 
@@ -126,7 +142,7 @@
               <button
                 type="button"
                 class="btn btn-success"
-                onclick="calcularQuadrado()"
+                onclick="calcularPoligonoIrregular()"
               >
                 Calcular
               </button>
@@ -134,6 +150,7 @@
                 type="button"
                 class="btn btn-secondary"
                 data-dismiss="modal"
+                id="fecharModal"
               >
                 Fechar
               </button>

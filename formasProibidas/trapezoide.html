@@ -58,24 +58,28 @@
           </div>
         </nav>
       </header>
-
       <div class="informacoes">
         <article class="historia">
           <div class="imagem">
-            <i class="bi bi-square"></i>
+            <img src="assets/imagens/trapezoide.png" alt="" />
           </div>
           <h5>
-            O quadrado é um polígono convexo que possui quatro lados. Em outras
-            palavras, é uma figura geométrica plana que possui quatro lados
-            congruentes e quatro ângulos retos. Dessa maneira, é chamado também
-            de quadrilátero.
+            O trapézio é uma figura da geometria plana bastante presente no
+            nosso dia a dia. Trata-se de um polígono que possui quatro lados,
+            sendo dois lados paralelos (conhecidos como base maior e base menor)
+            e dois não paralelos (lados oblíquos). Como todo quadrilátero, ele
+            possui duas diagonais, e a soma dos seus ângulos internos é sempre
+            igual a 360º
           </h5>
         </article>
         <article class="calculo">
-          <i class="bi bi-square"></i>
-          <h3>Área do Quadrado</h3>
+          <img src="assets/imagens/trapezoide.png" alt="" />
+          <h3>Área do trapézio irregular</h3>
           <br />
-          <h4>Multiplicamos o comprimento da sua base pela sua altura.</h4>
+          <h4>
+            Para calcular a área de um trapézio irregular, pode usar a seguinte
+            fórmula: A = (a + b)h/2
+          </h4>
         </article>
       </div>
     </main>
@@ -90,7 +94,7 @@
           <div class="modal-content custom-modal-content">
             <!-- Cabeçalho do Modal -->
             <div class="modal-header">
-              <h4 class="modal-title">Calculo do quadrado</h4>
+              <h4 class="modal-title">Calculo do trapézio irregular</h4>
               <button type="button" class="close" data-dismiss="modal">
                 &times;
               </button>
@@ -98,16 +102,6 @@
 
             <!-- Corpo do Modal -->
             <div class="modal-body">
-              <label for="">Digite o valor da base</label>
-              <div class="input-group input-group-sm mb-3">
-                <input
-                  type="number"
-                  class="form-control"
-                  aria-label="Sizing example input"
-                  aria-describedby="inputGroup-sizing-sm"
-                  id="baseQuadrado"
-                />
-              </div>
               <label for="">Digite o valor da altura</label>
               <div class="input-group input-group-sm mb-3">
                 <input
@@ -115,7 +109,27 @@
                   class="form-control"
                   aria-label="Sizing example input"
                   aria-describedby="inputGroup-sizing-sm"
-                  id="alturaQuadrado"
+                  id="alturaTrapezio"
+                />
+              </div>
+              <label for="">Digite o valor da base maior</label>
+              <div class="input-group input-group-sm mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-sm"
+                  id="baseMaior"
+                />
+              </div>
+              <label for="">Digite o valor da base menor</label>
+              <div class="input-group input-group-sm mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-sm"
+                  id="baseMenor"
                 />
               </div>
             </div>
@@ -126,7 +140,7 @@
               <button
                 type="button"
                 class="btn btn-success"
-                onclick="calcularQuadrado()"
+                onclick="calcularTrapezio()"
               >
                 Calcular
               </button>

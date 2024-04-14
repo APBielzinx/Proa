@@ -9,159 +9,171 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* CSS personalizado pode ser adicionado aqui */
+    </style>
 </head>
 
 <body>
-    <main>
-        <header>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/assets/imagens/logo.png" alt="Logo" width="50" height="40"
+                        class="d-inline-block align-text-top">
+                    <h4> Formas Proibidas</h4>
+                </a>
 
-            <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="/assets/imagens/logo.png" alt="Logo" width="50" height="40"
-                            class="d-inline-block align-text-top">
-                        <h4> Formas Proibidas</h4>
-                    </a>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="index.html#formas">
-                                <h4>calcular</h4>
-                            </a>
-                        </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html#formas">
+                            <h4>Calcular</h4>
+                        </a>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
+    </header>
 
-        </header>
-
-        <article class="banner">
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="image-container">
-                            <img src="assets/imagens/background.jpg" class="d-block w-100" alt="...">
-                            <div class="texto-sobre-imagem">
-                                <h1>Descubra o Mundo das Formas Geométricas!</h1>
-                                <a href="index.html#formas">
-                                    <h3>Saiba mais</h3>
-                                    <button>
-                                        <div class="arrow-up"></div>
-                                    </button>
-                                </a>
+    <main>
+        <div class="container-fluid">
+            <div class="banner">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="image-container">
+                                <img src="assets/imagens/background.jpg" class="d-block w-100 vh-100" alt="...">
+                                <div class="texto-sobre-imagem">
+                                    <h1>Descubra o Mundo das Formas Geométricas!</h1>
+                                    <a href="index.html#formas">
+                                        <h3>Saiba mais</h3>
+                                        <button class="btn btn-primary">
+                                            <div class="arrow-up"></div>
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </article>
+            
 
-        <article class="formas" id="formas">
-            <a href="retangulo.html">
-                <div class="card">
-                    <img src="assets/imagens/ret.png" alt="">
-                    <div class="card-body">
-                        <p class="card-text">Veja o retangulo de uma forma jamais vista antes, descubra a sua historia,
-                            curiosidades entre outras coisas!</p>
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <article class="formas" id="formas">
+                        <a href="retangulo.html">
+                            <div class="card  mb-3">
+                                <img src="assets/imagens/ret.png" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">Veja o retangulo de uma forma jamais vista antes, descubra a sua historia,
+                                        curiosidades entre outras coisas!</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="circulo.html">
+                            <div class="card  mb-3">
+                                <i class="bi bi-circle"></i>
+                                <div class="card-body">
+                                    <p class="card-text">Veja o circulo de uma forma jamais vista antes, descubra a sua historia,
+                                        curiosidades entre outras coisas!</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="cubo.html">
+                            <div class="card  mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z" />
+                                </svg>
+                                <div class="card-body">
+                                    <p class="card-text">Veja o Cubo de uma forma jamais vista antes, descubra a sua historia,
+                                        curiosidades entre outras coisas!</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="romboedro.html">
+                            <div class="card  mb-3">
+                                <div class="card-body">
+                                    <img src="assets/imagens/romboedro.png" alt="">
+                                    <p class="card-text">Veja o Romboedro de uma forma jamais vista antes, descubra a sua historia,
+                                        curiosidades entre outras coisas!</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="proximasFormas" id="proximasFormas">
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                    </article>
+                </div>
+            
+                <div class="col-md-12">
+                    <div class="formas2" id="formas2">
+                        <article class="formas">
+                            <div class="proximasFormas" id="voltarFormas">
+                                <i class="bi bi-arrow-left"></i>
+                            </div>
+                            <a href="trapezoide.html">
+                                <div class="card  mb-3">
+                                    <img src="assets/imagens/trapezoide.png" alt="">
+                                    <div class="card-body">
+                                        <p class="card-text">Veja o trapezoide irregular de uma forma jamais vista antes, descubra a sua
+                                            historia,
+                                            curiosidades entre outras coisas!</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="poligonoIrregular.html">
+                                <div class="card mb-3">
+                                    <img src="assets/imagens/poligonoIrregular.png" alt="">
+                                    <div class="card-body">
+                                        <p class="card-text">Veja os poligonos Irregulares de uma forma jamais vista antes, descubra
+                                            a sua
+                                            historia,
+                                            curiosidades entre outras coisas!</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="quadrado.html">
+                                <div class="card mb-3">
+                                    <i class="bi bi-square"></i>
+                                    <div class="card-body">
+                                        <p class="card-text">Veja o quadrado de uma forma jamais vista antes, descubra a sua
+                                            historia,
+                                            curiosidades entre outras coisas!</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="cuboide.html">
+                                <div class="card mb-3">
+                                    <img src="assets/imagens/cuboid.png" alt="">
+                                    <div class="card-body">
+                                        <p class="card-text">Veja o Cubóide de uma forma jamais vista antes, descubra a sua
+                                            historia,
+                                            curiosidades entre outras coisas!</p>
+            
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
                     </div>
                 </div>
-            </a>
-            <a href="circulo.html">
-                <div class="card">
-                    <i class="bi bi-circle"></i>
-                    <div class="card-body">
-                        <p class="card-text">Veja o circulo de uma forma jamais vista antes, descubra a sua historia,
-                            curiosidades entre outras coisas!</p>
-                    </div>
-                </div>
-            </a>
-            <a href="cubo.html">
-                <div class="card">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path
-                            d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z" />
-                    </svg>
-                    <div class="card-body">
-                        <p class="card-text">Veja o Cubo de uma forma jamais vista antes, descubra a sua historia,
-                            curiosidades entre outras coisas!</p>
-                    </div>
-                </div>
-            </a>
-            <a href="romboedro.html">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="assets/imagens/romboedro.png" alt="">
-                        <p class="card-text">Veja o Romboedro de uma forma jamais vista antes, descubra a sua historia,
-                            curiosidades entre outras coisas!</p>
-                    </div>
-                </div>
-            </a>
-            <div class="proximasFormas" id="proximasFormas">
-                <i class="bi bi-arrow-right"></i>
             </div>
-        </article>
-
-        <!--Outras formas só aparecem ao clicar no botão da -> -->
-
-        <div class="formas2" id="formas2">
-            <article class="formas">
-                <div class="proximasFormas" id="voltarFormas">
-                    <i class="bi bi-arrow-left"></i>
-                </div>
-                <a href="trapezoide.html">
-                    <div class="card">
-                        <img src="assets/imagens/trapezoide.png" alt="">
-                        <div class="card-body">
-                            <p class="card-text">Veja o quadrado de uma forma jamais vista antes, descubra a sua
-                                historia,
-                                curiosidades entre outras coisas!</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="poligonoIrregular.html">
-                    <div class="card">
-                        <img src="assets/imagens/poligonoIrregular.png" alt="">
-                        <div class="card-body">
-                            <p class="card-text">Veja os poligonos Irregulares de uma forma jamais vista antes, descubra
-                                a sua
-                                historia,
-                                curiosidades entre outras coisas!</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="retangulo.html">
-                    <div class="card">
-                        <i class="bi bi-square"></i>
-                        <div class="card-body">
-                            <p class="card-text">Veja o quadrado de uma forma jamais vista antes, descubra a sua
-                                historia,
-                                curiosidades entre outras coisas!</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="retangulo.html">
-                    <div class="card">
-                        <img src="assets/imagens/cuboid.png" alt="">
-                        <div class="card-body">
-                            <p class="card-text">Veja o Cubóide de uma forma jamais vista antes, descubra a sua
-                                historia,
-                                curiosidades entre outras coisas!</p>
-
-                        </div>
-                    </div>
-                </a>
-            </article>
+            </div>
         </div>
-
     </main>
 
     <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
