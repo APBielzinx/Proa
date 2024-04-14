@@ -1,3 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #212121;
+}
+
+
+
 nav{
     display: flex;
     justify-content: center;
@@ -5,6 +17,77 @@ nav{
     height: 9vh;
     align-items: center;
 }
+
+.image-container {
+    position: relative;
+}
+
+.texto-sobre-imagem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; 
+    font-size: 24px; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-sobre-imagem a{
+    height: 50%;
+    justify-content: end;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+}
+
+
+.texto-sobre-imagem button {
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #004dff;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    border: #004dff;
+    transition: 0.5s;
+
+  }
+  
+  .texto-sobre-imagem button:hover {
+    transform: scale(1.1);
+  }
+  
+  .texto-sobre-imagem button:active {
+    background-color: #020cd1;
+  }
+  
+  .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35%; 
+    margin-bottom: 60%; 
+    border-top: 15px solid white;
+  }
 
 .formas{
     display: flex;
@@ -25,6 +108,7 @@ nav{
     border-radius: 37px;
     width: 18rem;
     transition: 0.5s;
+    min-height: 45vh;
 }
 
 .card i {
@@ -34,9 +118,128 @@ nav{
     margin-top: 1vh
 }
 
+.card img{
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    max-height: 30vh;
+}
+
+svg{
+    display: flex;
+    justify-content: center;
+    height: 25vh;
+    margin-top: 1vh;
+}
+
+
 .card:hover{
     cursor: pointer;
     width: 20rem;
     box-shadow: 0px 0px 1px 1px black ;
     background-color: #b9faed;
 }
+
+.proximasFormas{
+    height: 5vh;
+    width: 5vw;
+}
+
+
+
+.proximasFormas i{
+    font-size: xxx-large;
+}
+
+
+.informacoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70vh;
+}
+
+.historia{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.calculo i,
+.historia i{
+    font-size: 20vw;
+}
+
+.calculo svg,
+.historia svg{
+   height: 35vh;
+}
+.historia h5{
+    max-width: 20vw;
+}
+
+.calculo{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.calculo h4{
+    max-width: 50%;
+}
+
+.calcular{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.calcular button {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 247, 185);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+    width: 20vw;
+    height: 8vh;
+  }
+  
+  .calcular button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+     width: 23vw;
+    height: 9vh;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(0, 247, 185);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .calcular :hover::before {
+    scale: 3;
+  }
+  
+  .calcular button:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  
+  .calcular button:active {
+    scale: 1;
+  }
+
+  .resultado{
+    margin: auto;
+  }
+
+ 

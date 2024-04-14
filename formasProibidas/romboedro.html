@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas Proibidas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main>
+ <header>
+           
+                <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="/assets/imagens/logo.png" alt="Logo" width="50" height="40" class="d-inline-block align-text-top">
+                           <h4>  Formas Proibidas</h4>
+                          </a>
+                        
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+  <a class="nav-link active" aria-current="page" href="index.html#formas"><h4>calcular</h4></a>                        </div>
+                      </div>
+                    </div>
+                  </nav>
+
+        </header>
+        <div class="informacoes">
+            <article class="historia">
+                <div class="imagem">
+                    <img src="assets/imagens/romboedro.png" alt="">
+                </div>
+                <h5>
+                    En geometría, un romboedro es una figura tridimensional, como un cubo, del que se diferencia porque
+                    sus 6 caras son rombos. Puede definirse como un poliedro de seis caras (hexaedro), todas ellas
+                    rombos idénticos. No se trata de un poliedro regular, porque aunque sus caras son todas iguales
+                    (uniformes), no son polígonos regulares.
+
+                </h5>
+            </article>
+            <article class="calculo">
+                <img src="assets/imagens/romboedro.png" alt="">
+                <h3>Área do Romboedro</h3>
+                <br>
+                <h4>Para calcular a área total de um romboedro você precisará dos comprimentos das diagonais. as
+                    diagonais do losango são iguais, então precisamos solicitar um único valor.</h4>
+            </article>
+        </div>
+
+
+    </main>
+
+    <div class="container mt-5">
+        <div class="calcular">
+            <button data-toggle="modal" data-target="#myModal">Calcular</button>
+        </div>
+        <!-- O Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content custom-modal-content">
+
+                    <!-- Cabeçalho do Modal -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Calculo do Romboedro</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Corpo do Modal -->
+                    <div class="modal-body">
+                        <label for="">Digite o valor da diagonal</label>
+                        <div class="input-group input-group-sm mb-3">
+                            <input type="number" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-sm" id="diagonalRomboedro">
+                        </div>
+                    </div>
+
+                    <!-- Rodapé do Modal -->
+                    <div class="modal-footer">
+                        <h5 class="resultado" id="resultado"></h5>
+                        <button type="button" class="btn btn-success" onclick="calcularRomboedro()">Calcular</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts Bootstrap e jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/calculos.js"></script>
+</body>
+
+</html>
