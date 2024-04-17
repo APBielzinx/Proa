@@ -1,13 +1,18 @@
 .conteudoLateralEsquerda {
     display: flex;
     width: 15vw;
-    background: rgb(20, 19, 19);
-    
+    background: rgb(0, 0, 0);
+    position: fixed;
+    border: 0;
+    border-style: groove;
+    border-right-color: rgba(57, 57, 57,0.5);
+    border-right-width: thin;
 }
 
 .logo {
     margin-top: 5vh;
-    width: 10vw;
+    width: 77%;
+    margin-left: auto;
 }
 
 
@@ -16,14 +21,14 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 4vh;
-    margin-top: 9vh;
+    gap: 3vh;
+    margin-top: 4vh;
     align-items: baseline;
 
 }
 
 .conteudoLateralEsquerda ul li {
-    height: 3vw;
+    height: 5vh;
     width: 100%;
     transition: height 0.5s;
     color: white;
@@ -32,18 +37,23 @@
 .conteudoLateralEsquerda ul li:hover {
     background-color: rgb(0, 0, 0);
     border-radius: 30px;
-    height: 5vw;
+    height: 7vh;
+    cursor: pointer;
 
 }
 
 .icone {
-    font-size: 3vh;
+    font-size: 4vh;
     margin-right: 1vw;
     color: white;
 }
 
-.profile {
-    margin: auto 0 0;
+.itensDistantes {
+    margin-top: inherit;
     align-items: center;
     display: flex;
+}
+
+.ultimoItem {
+    margin: 0;
 }
