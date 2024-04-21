@@ -2,31 +2,27 @@ import "./SugestoesAmigos.css";
 import Amigos from "./amigos/Amigos";
 
 var lista_usuarios = [
-    {
-        nome: "gabriel",
-        imagem: "https://avatars.githubusercontent.com/u/48858978?v=4"
-    },
-    
-    {
-        nome: "chico",
-        imagem: "https://avatars.githubusercontent.com/u/48858978?v=4"
-    },
-    
-    {
-        nome: "teu vo",
-        imagem: "https://avatars.githubusercontent.com/u/48858978?v=4"
-    },
-    {
-        nome: "chico",
-        imagem: "https://avatars.githubusercontent.com/u/48858978?v=4"
-    },   
-    {
-        nome: "chico",
-        imagem: "https://avatars.githubusercontent.com/u/48858978?v=4"
-    },   
-    
-    
-    ]
+  {
+    nome: "Maria",
+    imagem: "https://randomuser.me/api/portraits/women/21.jpg"
+  },
+  {
+    nome: "João",
+    imagem: "https://randomuser.me/api/portraits/men/12.jpg"
+  },
+  {
+    nome: "Ana",
+    imagem: "https://randomuser.me/api/portraits/women/18.jpg"
+  },
+  {
+    nome: "Pedro",
+    imagem: "https://randomuser.me/api/portraits/men/19.jpg"
+  },
+  {
+    nome: "Sofia",
+    imagem: "https://randomuser.me/api/portraits/women/20.jpg"
+  }
+];
 
 export default function SugestoesAmigos() {
   return (

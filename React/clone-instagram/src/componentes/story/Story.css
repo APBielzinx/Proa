@@ -18,6 +18,10 @@
     max-width: 100%;
 }
 
+.story img:hover{
+    cursor: pointer;
+}
+
 .usuario{
     width: fit-content;
 }

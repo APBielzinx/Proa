@@ -3,34 +3,35 @@ import "./Stories.css"
 
 var lista_usuarios = [
     {
-        nome: "gabriel",
-        imagem: "https://avatars.githubusercontent.com/u/48858978?v=4"
-    },
+        nome: "Roberta",
+        imagem: "https://randomuser.me/api/portraits/women/1.jpg"
+      },
+      {
+        nome: "claudio",
+        imagem: "https://randomuser.me/api/portraits/men/2.jpg"
+      },
+      {
+        nome: "Joana",
+        imagem: "https://randomuser.me/api/portraits/women/3.jpg"
+      },
+      {
+        nome: "Jef",
+        imagem: "https://randomuser.me/api/portraits/men/4.jpg"
+      },
+      {
+        nome: "tati",
+        imagem: "https://randomuser.me/api/portraits/women/5.jpg"
+      },
+      {
+        nome: "Rodnei",
+        imagem: "https://randomuser.me/api/portraits/men/10.jpg"
+      },
+      {
+        nome: "fabi",
+        imagem: "https://randomuser.me/api/portraits/women/8.jpg"
+      }
+    ];
     
-    {
-        nome: "chico",
-        imagem: "https://avatars.githubusercontent.com/u/48858978?v=4"
-    },
-    
-    {
-        nome: "teu vo",
-        imagem: "https://avatars.githubusercontent.com/u/48858978?v=4"
-    },
-    {
-        nome: "chico",
-        imagem: "https://avatars.githubusercontent.com/u/48858978?v=4"
-    },   
-    {
-        nome: "chico",
-        imagem: "https://avatars.githubusercontent.com/u/48858978?v=4"
-    },   
-    
-    {
-        nome: "chico",
-        imagem: "https://avatars.githubusercontent.com/u/48858978?v=4"
-    }
-    
-    ]
 
 export default function Stories () {
     

@@ -1,25 +1,46 @@
-import "./Feed.css"
+import "./Feed.css";
 import Post from "../post/Post";
 
+var listPosts = [
+  {
+    imgProfile: "https://randomuser.me/api/portraits/men/20.jpg",
+    nameProfile: "Lucas",
+    time: "● 2d",
+    imgSrc: "https://picsum.photos/id/237/200/300",
+    body: "Um jantar incrível com uma vista deslumbrante. A comida estava divina!",
+    numComentarios: 200,
+  },
+  {
+    imgProfile: "https://randomuser.me/api/portraits/women/21.jpg",
+    nameProfile: "Isabela",
+    time: "● 1d",
+    imgSrc: "https://picsum.photos/id/238/200/300",
+    body: "Explorando novos horizontes. Essa vista é de tirar o fôlego!",
+    numComentarios: 400,
+  },
+  {
+    imgProfile: "https://randomuser.me/api/portraits/men/22.jpg",
+    nameProfile: "Gabriel",
+    time: "● 3d",
+    imgSrc: "https://picsum.photos/id/239/200/300",
+    body: "Apreciando o pôr do sol na montanha. A paz e serenidade do momento são indescritíveis.",
+    numComentarios: 150
+  }
+];
+
 export default function Feed() {
-    return (
-        <div className='Feed'>
-            <Post 
-            imgProfile ="https://img.freepik.com/fotos-premium/linda-e-fofa-jovem-garota-de-anime-ia-generativa_755833-81.jpg?w=740"
-            nameProfile="Chico" 
-            time = " ● 2d"
-            imgSrc="https://mlabs-wordpress-site.s3.amazonaws.com/wp-content/uploads/2018/04/dimitri-tyan-232294-unsplash-1.jpg" 
-            body="Olha só que camera incrivel!!"
-            numComentarios = "500"
-            />
-              <Post 
-            imgProfile ="https://img.freepik.com/fotos-premium/linda-e-fofa-jovem-garota-de-anime-ia-generativa_755833-81.jpg?w=740"
-            nameProfile="Chico" 
-            time = " ● 2d"
-            imgSrc="https://mlabs-wordpress-site.s3.amazonaws.com/wp-content/uploads/2018/04/dimitri-tyan-232294-unsplash-1.jpg" 
-            body="Olha só que camera incrivel!!"
-            numComentarios = "500"
-            />
-        </div>
-    );
+  return (
+    <div className="Feed">
+      {listPosts.map((posts) => (
+        <Post
+          imgProfile={posts.imgProfile}
+          nameProfile={posts.nameProfile}
+          time={posts.time}
+          imgSrc={posts.imgSrc}
+          body={posts.body}
+          numComentarios={posts.numComentarios}
+        />
+      ))}
+    </div>
+  );
 }
