@@ -1,0 +1,20 @@
+.linksSugestoes {
+  max-width: 20vw;
+}
+
+.linksSugestoes h5 {
+  color: darkgray;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.linksSugestoes h5 a {
+  padding-right: 1vw;
+}
+
+
+.linksSugestoes h5 a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -17,3 +17,7 @@
     margin-bottom: 5px;
     max-width: 100%;
 }
+
+.usuario{
+    width: fit-content;
+}

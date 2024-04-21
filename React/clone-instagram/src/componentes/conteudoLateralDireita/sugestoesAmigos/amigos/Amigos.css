@@ -1,0 +1,61 @@
+.amigos {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 100%;
+    color: white;
+}
+
+.imgSugestao{
+    display: flex;
+    align-items: center;
+}
+
+.imgSugestao .imagem{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 19%;
+    margin-right: 1vw;
+}
+
+.imgSugestao .imagem img {
+    border-radius: 50%;
+  border-radius: 50em;
+  border: 3px solid transparent;
+    padding: 2px;
+    margin-bottom: 5px;
+    max-width: 100%;
+    width: 90%;
+    margin-right: 1vw;
+}
+
+.imgSugestao .imagem img:hover{
+    cursor: pointer;
+}
+
+.amigos .usuario{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.amigos .usuario strong:hover{
+    cursor: pointer;
+}
+
+.amigos .seguir{
+    margin-left: auto;
+    color: rgb(0, 95, 238);
+}
+
+.amigos .seguir:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.sugestoesParaVoce{
+    color: darkgray;
+}
+
+

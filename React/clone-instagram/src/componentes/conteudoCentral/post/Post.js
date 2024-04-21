@@ -10,8 +10,8 @@ export default function Post(props) {
             <div className="card-header">
                 <h3><img src={props.imgProfile} />
                     {props.nameProfile}
-                    <div className='time'>{props.time}</div>
-                    <TfiMoreAlt className='icone-post ' style={{ marginLeft: '20vw' }} />
+                    <div className='time'><h4>{props.time}</h4></div>
+                    <TfiMoreAlt className='icone-post ' style={{ marginLeft:"auto" }} />
                 </h3>
             </div>
             <div className="card-body">
@@ -20,7 +20,10 @@ export default function Post(props) {
                     <FaRegHeart className='icone-post ' />
                     <BsChat className='icone-post ' />
                     <FaRegShareFromSquare className='icone-post ' />
-                    <FaRegBookmark className='icone-post ' style={{ marginLeft: '22.5vw' }} />
+                    <div className='ultimoIcone'>
+                    <FaRegBookmark className='icone-post ' style={{ marginLeft: "auto" }} />
+                    </div>
+                    
                 </div>
                 <p>{props.body}</p>
             </div>
